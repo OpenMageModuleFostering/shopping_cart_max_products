@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category    LilsellCommerce
+ * @package     LilsellCommerce CartMaxProduct
+ * @author      Ciaran Hale <ciaranhale@gmail.com>
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <LilsellCommerce_CartMaxProduct>
+            <version>1.0.0.0</version>
+        </LilsellCommerce_CartMaxProduct>
+    </modules>
+    <global>
+        <models>
+            <lilsellcommerce_cartmaxproduct>
+                <class>LilsellCommerce_CartMaxProduct_Model</class>
+            </lilsellcommerce_cartmaxproduct>
+        </models>
+        <helpers>
+            <lilsellcommerce_cartmaxproduct>
+                <class>LilsellCommerce_CartMaxProduct_Helper</class>
+            </lilsellcommerce_cartmaxproduct>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <sales_quote_save_before>
+                <observers>
+                    <lilsellcommerce_cartmaxproduct_enforceCartOrderLimit>
+                        <class>lilsellcommerce_cartmaxproduct/observer</class>
+                        <method>enforceCartOrderLimit</method>
+                    </lilsellcommerce_cartmaxproduct_enforceCartOrderLimit>
+                </observers>
+            </sales_quote_save_before>
+        </events>
+    </frontend>
+    <default>
+        <sales>
+            <lilsellcommerce_cartmaxproduct>
+                <active>1</active>
+                <cart_max_amount>10</cart_max_amount>
+                <cart_max_amount_msg><![CDATA[The Maximum allowed number of items in your cart is:]]></cart_max_amount_msg>
+            </lilsellcommerce_cartmaxproduct>
+        </sales>
+    </default>
+</config>

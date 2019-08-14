@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+    <name>Shopping_Cart_Max_Products</name>
+    <version>1.0.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>An admin managed extension to set a limit on how many products can be added to the cart at one time. </summary>
+    <description>An Extension to set a configurable limit on how many items can be added to the shopping cart at any one time.&#xD;
+&#xD;
+This is at an item level. You can add multiple instances of the same product. &#xD;
+The total number of unique Products must not exceed X.&#xD;
+Provides an Admin view in Sales to set the value and a warning message. It can also be enabled or disabled.&#xD;
+It is an Observer. So will update on any cart change, &#xD;
+&#xD;
+It supports Multi Stores. &#xD;
+</description>
+    <notes>This version is now stable. </notes>
+    <authors><author><name>Ciaran Hale</name><user>Butterbean25</user><email>ciaranhale@gmail.com</email></author></authors>
+    <date>2015-10-13</date>
+    <time>10:01:05</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="LilsellCommerce_CartMaxProduct.xml" hash="a534c75fbed0dadf0a4abd33a7bbf349"/></dir></target><target name="magecommunity"><dir name="LilsellCommerce"><dir name="CartMaxProduct"><dir name="Helper"><file name="Data.php" hash="1ee6c0c045806f61081c516d783ec148"/></dir><dir name="Model"><file name="Observer.php" hash="661487ee00472300b123a20d16e83c02"/></dir><dir name="etc"><file name="config.xml" hash="3ebb2b3a63775312a808a2b7b2bddb46"/><file name="system.xml" hash="bc77e5542acd4e771f6837f2caec29d1"/></dir><file name=".DS_Store" hash="1dcf4d325e6c5f915f06d957fe08104b"/></dir><file name=".DS_Store" hash="40388924ce5773998dc2ecf79e4f5c63"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

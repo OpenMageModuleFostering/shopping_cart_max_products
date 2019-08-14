@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category    LilsellCommerce
+ * @package     LilsellCommerce CartMaxProduct
+ * @author      Ciaran Hale <ciaranhale@gmail.com>
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <sections>
+        <sales translate="label" module="sales">
+            <groups>
+                <lilsellcommerce_cartmaxproduct>
+                    <label>Maximum Number of Items In Cart</label>
+                    <sort_order>51</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <active translate="label">
+                            <label>Enable</label>
+                            <sort_order>5</sort_order>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </active>
+                        <cart_max_amount>
+                            <label>Max Number of Items</label>
+                            <comment><![CDATA[What is the max amount of items you want to allow in your cart.]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cart_max_amount>
+                        <cart_max_amount_msg>
+                            <label>Max number of items error value</label>
+                            <comment><![CDATA[Message to be displayed to customer when "Max Number of Items" condition limit is triggered.  Defaults to "The Maximum allowed number of items in your cart is"]]></comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </cart_max_amount_msg>
+                    </fields>
+                </lilsellcommerce_cartmaxproduct>
+            </groups>
+        </sales>
+    </sections>
+</config>

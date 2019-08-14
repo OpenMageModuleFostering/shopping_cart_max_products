@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Shopping_Cart_Max_Products",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL-3.0)",
+    "homepage": "",
+    "description": "An admin managed extension to set a limit on how many products can be added to the cart at one time. ",
+    "authors": [
+    {
+        "name": "Ciaran Hale",
+        "email": "ciaranhale@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
